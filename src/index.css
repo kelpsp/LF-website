@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-300 antialiased;
+  }
+}
+
+.markdown-body {
+  @apply text-zinc-300 leading-relaxed;
+}
+
+.markdown-body h1 { @apply text-3xl font-bold text-white mb-4; }
+.markdown-body h2 { @apply text-2xl font-bold text-white mb-3 mt-6; }
+.markdown-body p { @apply mb-4; }
+.markdown-body a { @apply text-orange-500 hover:underline; }
